@@ -171,3 +171,14 @@ footer {
     margin: 5px;
     border: 1px solid gray;
 }
+
+
+#calendar  td{
+	border: 1px solid blue;
+	padding: 3px;
+}
+
+.today {
+	background: blue;
+	color: white;
+}

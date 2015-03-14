@@ -26,3 +26,11 @@ for (var i = 0; i < links.length; i++) {
         document.getElementById("breadcrumb").innerHTML = this.innerHTML + " : " + this.title;
     }
 }
+
+var todayDay = new Date().getDate(); // find corect day
+var days = document.getElementById('calendar').getElementsByTagName('td');
+for (var i = 0; i < days.length; i++) {
+	if(todayDay == days[i].innerHTML) {
+		days[i].className = "today";
+	}
+}
